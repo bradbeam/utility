@@ -10,6 +10,8 @@ RUN apk --no-cache add curl \
                        git \
                        iputils \
                        mtr \
-                       nmap
+                       nmap \
+                       jq \
+                       iperf
 
 ENTRYPOINT [ "/bin/bash" ]

@@ -1,18 +1,19 @@
 FROM alpine:3.6
 
-RUN apk --no-cache add curl \
-                       ca-certificates \
-                       wget \
-                       netcat-openbsd \
+RUN apk --no-cache add bash \
+                       bind \
                        bind-tools \
-                       bash \
-                       vim \
+                       ca-certificates \
+                       curl \
                        git \
-                       iputils \
-                       mtr \
-                       nmap \
-                       jq \
                        iperf \
-                       tcpdump
+                       iputils \
+                       jq \
+                       mtr \
+                       netcat-openbsd \
+                       nmap \
+                       tcpdump \
+                       vim \
+                       wget 
 
 ENTRYPOINT [ "/bin/bash" ]

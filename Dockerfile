@@ -12,8 +12,9 @@ RUN apk --no-cache add bash \
                        mtr \
                        netcat-openbsd \
                        nmap \
+                       rsync \
                        tcpdump \
                        vim \
-                       wget 
+                       wget
 
 ENTRYPOINT [ "/bin/bash" ]

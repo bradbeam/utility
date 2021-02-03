@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.13
 
 RUN apk --no-cache add bash \
                        bind \
@@ -13,6 +13,7 @@ RUN apk --no-cache add bash \
                        mtr \
                        netcat-openbsd \
                        nmap \
+                       openssh-client \
                        rsync \
                        tcpdump \
                        vim \
